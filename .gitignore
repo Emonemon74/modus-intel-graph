@@ -1,0 +1,13 @@
+.env
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.index
+data/faiss_meta.json
+!data/sample_graph.json
+.venv
+node_modules/
+web/dist/
+__pycache__/
+*.pyc
+nohup.out
