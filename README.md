@@ -25,7 +25,20 @@ roles and skills?"
 | **Data & knowledge** | SQLite via SQLAlchemy — nodes, one typed `edges` table, overlay + evidence tables (`app/models.py`). Swap to Postgres with one env var. |
 | **External research** | DuckDuckGo web search + a local PDF/text corpus (`corpus/`), all snippets persisted as `sources` |
 
-See `docs/ARCHITECTURE.md` and `docs/DATA_MODEL.md`.
+See `docs/ARCHITECTURE.md` (+ `docs/architecture.svg`) and `docs/DATA_MODEL.md`.
+
+## Deliverables map
+
+| Deliverable | Location |
+|---|---|
+| Source code | this repo |
+| Setup instructions | this README |
+| Architecture diagram | `docs/architecture.svg`, `docs/ARCHITECTURE.md` |
+| Data model | `docs/DATA_MODEL.md` |
+| Model & library inventory (with licences) | `docs/MODEL_AND_LIBRARY_INVENTORY.md` |
+| Sample data | `data/sample_graph.json` (load with `cli load-sample`) |
+| Research sources | `data/research_sources.json` (`cli export-sources`) |
+| Live demo script | `docs/DEMO.md` |
 
 ## Setup
 
@@ -36,16 +49,23 @@ Requires Python 3.13 + [uv](https://docs.astral.sh/uv/), and Node 20+.
 uv sync
 cp .env.example .env        # then put an LLM key in .env  (see below)
 
-# 2. build the seed graph  (~15-20 min on the free tier; resumable)
+# 2a. FAST PATH — load the pre-built graph (no LLM key needed to explore the app)
+uv run python -m app.cli load-sample
+
+# 2b. or build it yourself from scratch (~15-20 min on the free tier; resumable)
 uv run python -m app.cli ingest "Retail Banking"
 
-# 3. run the API
+# 3. run the API   (also serves the built UI)
 uv run uvicorn app.api.main:app --port 8000
 
 # 4. run the UI
 cd web && npm install && npm run dev      # http://localhost:5173
 #   or build it and let the API serve it:  npm run build  -> http://localhost:8000
 ```
+
+> **Reviewers:** `load-sample` reconstitutes the full graph, overlays, and 200+
+> research sources with evidence links from `data/sample_graph.json` — no API key
+> required. Only the *live* cascade and add-entity features call a model.
 
 ### LLM configuration
 
@@ -74,12 +94,15 @@ fully local.
 ## CLI
 
 ```bash
-uv run python -m app.cli ingest "Retail Banking"              # build the graph
+uv run python -m app.cli load-sample          # load data/sample_graph.json (no LLM key)
+uv run python -m app.cli ingest "Retail Banking"          # build the graph
 uv run python -m app.cli ingest "Retail Banking" --from analyse  # resume from a step
-uv run python -m app.cli reindex                              # rebuild FAISS from `sources`
-uv run python -m app.cli export                               # dump graph -> data/sample_graph.json
-uv run python -m app.cli stats                                # counts
-uv run python -m app.cli reset                                # wipe graph, keep schema
+uv run python -m app.cli reindex              # rebuild FAISS from `sources`
+uv run python -m app.cli export               # graph + overlays + evidence -> data/sample_graph.json
+uv run python -m app.cli export-sources       # research sources + claims they support
+uv run python -m app.cli reclassify-skills    # re-run just the skill-impact step
+uv run python -m app.cli stats                # counts
+uv run python -m app.cli reset                # wipe graph, keep schema
 ```
 
 Ingest steps (for `--from`): `industry_stages, processes, activities, roles,

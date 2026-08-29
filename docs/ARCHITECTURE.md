@@ -1,5 +1,7 @@
 # Architecture
 
+![Architecture diagram](architecture.svg)
+
 ```
 ┌───────────────────────────────────────────────────────────────┐
 │ USER INTERFACE                                                 │

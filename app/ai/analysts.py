@@ -91,9 +91,16 @@ def classify_skill(industry: str, skill: str, evidence: str, activity_context: s
         "classify_skill", SYS,
         f"Industry: {industry}\nSkill: {skill}\nUsed in activities: {activity_context}\n\n"
         f"EVIDENCE:\n{evidence or '(none; reason from domain knowledge)'}\n\n"
-        f"Classify how AI/automation will change demand for this skill: EMERGING, "
-        f"INCREASING, AI_AUGMENTED, CHANGING, DECLINING, or ENDURING_HUMAN. "
-        f"Give a one-line rationale and confidence 0-1.",
+        "Classify how AI/automation changes demand for THIS skill over the next 3-5 years. "
+        "Pick the single best-fitting label and be decisive -- do not default to AI_AUGMENTED "
+        "unless the skill genuinely stays central with AI assisting:\n"
+        "  DECLINING       - routine/manual; AI largely removes the need (e.g. manual data entry)\n"
+        "  CHANGING        - still needed but the actual work is substantially different\n"
+        "  AI_AUGMENTED    - skill stays core; AI handles the routine part, human judgement remains\n"
+        "  INCREASING      - existing skill, demand clearly rising because of AI/automation\n"
+        "  EMERGING        - new skill that barely existed before (e.g. prompt design, model governance)\n"
+        "  ENDURING_HUMAN  - inherently human (ethics, relationship trust, complex negotiation); AI changes it little\n"
+        "Give a one-line rationale grounded in the activities/evidence and confidence 0-1.",
         S.SkillImpactOut,
     )
 
