@@ -230,15 +230,19 @@ function Cascade() {
   const [busy, setBusy] = useState(false)
   const [result, setResult] = useState(null)
 
+  const [saved, setSaved] = useState([])
   useEffect(() => { api.listNodes(type).then(setNodes) }, [type])
+  useEffect(() => { api.cascadeList().then(setSaved).catch(() => {}) }, [])
 
   const run = async () => {
     setBusy(true); setResult(null)
     try {
       const { run_id } = await api.cascade(type, Number(id), hyp, depth)
       setResult(await api.cascadeResult(run_id))
+      api.cascadeList().then(setSaved).catch(() => {})
     } catch (e) { alert(e.message) } finally { setBusy(false) }
   }
+  const load = async (rid) => setResult(await api.cascadeResult(rid))
 
   return (
     <div className="cascade">
@@ -258,6 +262,17 @@ function Cascade() {
         </select>
         <button disabled={!id || busy} onClick={run}>{busy ? 'reasoning…' : 'Run cascade'}</button>
       </div>
+
+      {saved.length > 0 && (
+        <div className="saved-runs">
+          <span>saved runs:</span>
+          {saved.map((r) => (
+            <button key={r.id} className="chip" onClick={() => load(r.id)}>
+              #{r.id} {r.trigger_type} · {r.impacts} impacts
+            </button>
+          ))}
+        </div>
+      )}
 
       {result && (
         <div className="results">

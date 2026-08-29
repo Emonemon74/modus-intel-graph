@@ -30,4 +30,5 @@ export const api = {
       body: JSON.stringify({ trigger_type, trigger_id, hypothesis, max_depth }),
     }),
   cascadeResult: (runId) => req(`/cascade/${runId}`),
+  cascadeList: () => req('/cascades'),
 }

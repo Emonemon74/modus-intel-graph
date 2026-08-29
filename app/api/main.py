@@ -172,6 +172,16 @@ def cascade(body: CascadeIn):
     return {"run_id": run_id}
 
 
+@app.get("/cascades")
+def cascade_list():
+    from app.models import CascadeRun
+
+    with session_scope() as s:
+        runs = s.scalars(select(CascadeRun).order_by(CascadeRun.id.desc()).limit(20)).all()
+        return [{"id": r.id, "trigger_type": r.trigger_type, "trigger_id": r.trigger_id,
+                 "hypothesis": r.hypothesis, "impacts": len(r.results)} for r in runs]
+
+
 @app.get("/cascade/{run_id}")
 def cascade_result(run_id: int):
     from app.pipeline.cascade import get_cascade

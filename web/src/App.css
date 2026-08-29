@@ -72,7 +72,9 @@ button:disabled { opacity: .5; cursor: default; }
 
 /* cascade */
 .cascade { padding: 16px; height: 100%; overflow-y: auto; }
-.cascade .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.cascade .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.saved-runs { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; font-size: 12px; color: #94a3b8; }
+.chip { background: #334155; padding: 3px 9px; border-radius: 12px; font-size: 11px; }
 .cascade input { flex: 1; min-width: 240px; background: #1e293b; border: 1px solid #334155;
   color: #e2e8f0; padding: 6px; border-radius: 5px; }
 .impact { display: flex; gap: 10px; background: #1e293b; border-radius: 6px;
