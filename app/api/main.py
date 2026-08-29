@@ -89,12 +89,18 @@ def list_nodes(node_type: str):
 
 
 def _overlay(s, node_type: str, node_id: int) -> dict:
+    from app.graph.rollup import process_impact, process_roles, role_impact
+
     if node_type == "activity":
         opp = s.scalars(select(AIOpportunity).filter_by(activity_id=node_id)).first()
         return {"ai_opportunity": _as_dict(opp)} if opp else {}
     if node_type == "skill":
         si = s.scalars(select(SkillImpact).filter_by(skill_id=node_id)).first()
         return {"skill_impact": _as_dict(si)} if si else {}
+    if node_type == "role":
+        return role_impact(s, node_id)
+    if node_type == "process":
+        return {**process_impact(s, node_id), **process_roles(s, node_id)}
     return {}
 
 
@@ -154,13 +160,15 @@ class CascadeIn(BaseModel):
     trigger_type: str
     trigger_id: int
     hypothesis: str
+    max_depth: int | None = None   # override CASCADE_MAX_DEPTH for this run
 
 
 @app.post("/cascade")
 def cascade(body: CascadeIn):
     from app.pipeline.cascade import run_cascade
 
-    run_id = run_cascade(body.trigger_type, body.trigger_id, body.hypothesis)
+    run_id = run_cascade(body.trigger_type, body.trigger_id, body.hypothesis,
+                         max_depth=body.max_depth)
     return {"run_id": run_id}
 
 

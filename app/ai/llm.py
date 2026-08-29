@@ -39,7 +39,8 @@ _LogSession = sessionmaker(bind=_log_engine, future=True)
 _client = OpenAI(
     base_url=settings.llm_base_url,
     api_key=settings.llm_api_key or "not-needed-for-local",
-    max_retries=0,  # we do our own ret/logging
+    max_retries=0,          # we do our own retry / logging
+    timeout=settings.llm_timeout,  # fail fast instead of hanging on a queued free-tier request
 )
 
 T = TypeVar("T", bound=BaseModel)

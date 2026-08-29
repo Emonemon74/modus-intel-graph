@@ -19,7 +19,10 @@ Open `http://localhost:8000`. Graph already ingested for **Retail Banking**.
   (AUTOMATE/AUGMENT + benefit/risk/confidence). Hit **Show evidence** →
   research snippets with similarity scores + source URLs.
 - Click a **Skill** → **Skill Impact** classification (e.g. DECLINING) + evidence.
-- Click a **Role** → see every process/activity/skill it touches.
+- Click a **Role** → **Future Change** panel: AI-exposure band, how many of its
+  activities are automatable vs augmented, how its skills split across
+  declining/emerging — all computed from the graph, no LLM call.
+- Click a **Process** → AI roll-up score + **affected roles** listed directly.
 - "Select a skill → see every role that needs it" — pick a skill, read
   `ROLE_HAS_SKILL` / `ACTIVITY_REQUIRES_SKILL` neighbours.
 

@@ -19134,6 +19134,168 @@
       "quote": "Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making. Data analysis has multiple facets and approaches, encompassing diverse techniques under a variety of names, and is used in different business, science, and social science domains. In today's business world, data analysis plays an important role in making decisions more scientific and helping businesses operate more effectively. It is widely used in fields such as business analytics, healthcare, and artific",
       "relevance": 0.5531673431396484,
       "created_at": "2026-08-29 18:20:38.459729"
+    },
+    {
+      "id": 1089,
+      "claim_type": "skill_pre",
+      "claim_id": 1,
+      "source_id": 56,
+      "quote": "Data collection is the systematic process of gathering and measuring information on variables of interest, in an established fashion that enables researchers to answer questions,...",
+      "relevance": 0.4951213300228119,
+      "created_at": "2026-08-29 18:32:46.682955"
+    },
+    {
+      "id": 1090,
+      "claim_type": "skill_pre",
+      "claim_id": 1,
+      "source_id": 58,
+      "quote": "6 days ago \u00b7 Data Collection is the systematic way of collecting data for research, analysis, or decision-making. It can be based on primary or secondary ...",
+      "relevance": 0.4863254725933075,
+      "created_at": "2026-08-29 18:32:46.682959"
+    },
+    {
+      "id": 1091,
+      "claim_type": "skill_pre",
+      "claim_id": 1,
+      "source_id": 57,
+      "quote": "25 Feb 2025 \u00b7 Data collection is collecting information from various sources to answer specific questions or achieve a goal.",
+      "relevance": 0.47222700715065,
+      "created_at": "2026-08-29 18:32:46.682960"
+    },
+    {
+      "id": 1092,
+      "claim_type": "skill_impact",
+      "claim_id": 1,
+      "source_id": 55,
+      "quote": "Data collection or data gathering is the process of gathering and measuring information on targeted variables in an established system, which then enables one to answer relevant questions and evaluate outcomes. Data collection is a research component in all study fields, including physical and social sciences, humanities, and business. While methods vary by discipline, the emphasis on ensuring accurate and honest collection remains the same. The goal for all data collection is to capture evidence that allows data analysis to lead to the formulation of credible answers to the questions that hav",
+      "relevance": 0.551257848739624,
+      "created_at": "2026-08-29 18:32:46.716180"
+    },
+    {
+      "id": 1093,
+      "claim_type": "skill_impact",
+      "claim_id": 1,
+      "source_id": 59,
+      "quote": "Master regulatory compliance with expert guidance on requirements, frameworks and AI-powered solutions for managing evolving regulations.",
+      "relevance": 0.4832664132118225,
+      "created_at": "2026-08-29 18:32:46.716184"
+    },
+    {
+      "id": 1094,
+      "claim_type": "skill_impact",
+      "claim_id": 1,
+      "source_id": 45,
+      "quote": "Manage your data for better compliance and take your regulatory reporting to the next level. Meet your deadlines whilst ensuring accuracy, completeness and traceability of your reported data in a user-friendly an efficient way.",
+      "relevance": 0.4715307056903839,
+      "created_at": "2026-08-29 18:32:46.716185"
+    },
+    {
+      "id": 1095,
+      "claim_type": "skill_pre",
+      "claim_id": 2,
+      "source_id": 59,
+      "quote": "Master regulatory compliance with expert guidance on requirements, frameworks and AI-powered solutions for managing evolving regulations.",
+      "relevance": 0.7027246952056885,
+      "created_at": "2026-08-29 18:32:53.043413"
+    },
+    {
+      "id": 1096,
+      "claim_type": "skill_pre",
+      "claim_id": 2,
+      "source_id": 60,
+      "quote": "Aug 19, 2025 \u00b7 This guide explains what regulatory compliance means, why it matters across industries, and how to implement an effective compliance strategy. It also looks ahead to emerging compliance challenges in areas like cybersecurity, ESG, and AI.",
+      "relevance": 0.6338157057762146,
+      "created_at": "2026-08-29 18:32:53.043423"
+    },
+    {
+      "id": 1097,
+      "claim_type": "skill_pre",
+      "claim_id": 2,
+      "source_id": 61,
+      "quote": "May 11, 2026 \u00b7 Regulatory compliance refers to the process by which organizations ensure they follow relevant laws, regulations, and guidelines applicable to their industry or operations. Apr 30, 2025 \u00b7 Learn what regulatory compliance, key regulations, best practices, and how to build a strong compliance program to avoid fines of up to $2M per violation. Jun 12, 2025 \u00b7 Explore A Beginner's Guide to Regulatory Compliance and learn the key points, implications, and steps you can take. Understand what it is and why it matters for your security and privacy. Nov 21, 2025 \u00b7 This guide outlines the ",
+      "relevance": 0.5860431790351868,
+      "created_at": "2026-08-29 18:32:53.043425"
+    },
+    {
+      "id": 1098,
+      "claim_type": "skill_impact",
+      "claim_id": 2,
+      "source_id": 59,
+      "quote": "Master regulatory compliance with expert guidance on requirements, frameworks and AI-powered solutions for managing evolving regulations.",
+      "relevance": 0.7216285467147827,
+      "created_at": "2026-08-29 18:32:53.272832"
+    },
+    {
+      "id": 1099,
+      "claim_type": "skill_impact",
+      "claim_id": 2,
+      "source_id": 160,
+      "quote": "Regulatory compliance verification is the structured process by which organizations demonstrate, and third parties confirm, that operations, products, or systems meet the requirements imposed by federal statutes, agency rules, and industry standards.",
+      "relevance": 0.6267257928848267,
+      "created_at": "2026-08-29 18:32:53.272838"
+    },
+    {
+      "id": 1100,
+      "claim_type": "skill_impact",
+      "claim_id": 2,
+      "source_id": 162,
+      "quote": "Regulatory Compliance Verification is the structured process of confirming that an organization, supplier, or business entity adheres to applicable laws, industry regulations, and internal governance standards through documented checks, validation procedures, and control assessments.",
+      "relevance": 0.62474125623703,
+      "created_at": "2026-08-29 18:32:53.272839"
+    },
+    {
+      "id": 1101,
+      "claim_type": "skill_pre",
+      "claim_id": 3,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.4433516263961792,
+      "created_at": "2026-08-29 18:34:37.940251"
+    },
+    {
+      "id": 1102,
+      "claim_type": "skill_pre",
+      "claim_id": 3,
+      "source_id": 28,
+      "quote": "Whether you\u2019re launching a new digital product, exploring an AI-powered opportunity or redefining an existing offering, we\u2019ll help you move from concept to engineering with clarity and confidence.",
+      "relevance": 0.43013808131217957,
+      "created_at": "2026-08-29 18:34:37.940257"
+    },
+    {
+      "id": 1103,
+      "claim_type": "skill_pre",
+      "claim_id": 3,
+      "source_id": 205,
+      "quote": "Customer Journey Analytics enables Customer to access an Analysis Workspace experience on Adobe Experience Platform infrastructure (e.g., data ingestion tools, ...",
+      "relevance": 0.3877963125705719,
+      "created_at": "2026-08-29 18:34:37.940259"
+    },
+    {
+      "id": 1104,
+      "claim_type": "skill_impact",
+      "claim_id": 3,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.541241466999054,
+      "created_at": "2026-08-29 18:34:38.247993"
+    },
+    {
+      "id": 1105,
+      "claim_type": "skill_impact",
+      "claim_id": 3,
+      "source_id": 166,
+      "quote": "Ensures Compliance \u00b7 Deters fraud and money laundering \u00b7 Maintaining a positive reputation \u00b7 Provides a faster verification process \u00b7 Improves customer experience.",
+      "relevance": 0.4801153540611267,
+      "created_at": "2026-08-29 18:34:38.247998"
+    },
+    {
+      "id": 1106,
+      "claim_type": "skill_impact",
+      "claim_id": 3,
+      "source_id": 6,
+      "quote": "Configurable AI risk scoring for vendor, compliance, and AML assessments. Automated risk rating with multi-factor scoring matrices and real-time analysis.",
+      "relevance": 0.46853795647621155,
+      "created_at": "2026-08-29 18:34:38.247999"
     }
   ]
 }

@@ -30,6 +30,7 @@ class Settings(BaseSettings):
     # fit the free-tier 8k tokens/min budget. Ignored by models that don't support it.
     llm_reasoning_effort: str = "low"
     llm_max_retries: int = 10
+    llm_timeout: float = 45.0   # per-request; a queued free-tier call that exceeds this is retried
     # Client-side tokens-per-minute cap. Groq free tier for gpt-oss-120b is 8000.
     # Set to 0 to disable (local Ollama, or a paid tier).
     llm_tokens_per_min: int = 6000

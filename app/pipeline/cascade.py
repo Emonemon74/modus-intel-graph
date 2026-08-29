@@ -35,7 +35,9 @@ _EXPAND = {
 }
 
 
-def run_cascade(trigger_type: str, trigger_id: int, hypothesis: str) -> int:
+def run_cascade(trigger_type: str, trigger_id: int, hypothesis: str,
+                max_depth: int | None = None) -> int:
+    depth_limit = max_depth or settings.cascade_max_depth
     index = EvidenceIndex()
 
     with session_scope() as s:
@@ -53,7 +55,7 @@ def run_cascade(trigger_type: str, trigger_id: int, hypothesis: str) -> int:
 
     while frontier:
         ntype, nid, depth, path = frontier.pop(0)
-        if depth >= settings.cascade_max_depth:
+        if depth >= depth_limit:
             continue
 
         # short read: this node's candidate neighbours

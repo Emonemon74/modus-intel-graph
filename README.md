@@ -9,11 +9,15 @@ It independently researches and builds a graph:
 Industry → Value-Chain Stage → Process → Activity → Role → Skill
 ```
 
-then overlays, for every node, an **AI opportunity** assessment and a **future-skill
-classification**, each traceable to stored research evidence. You can navigate the
-relationships, add a brand-new process/role/skill and have it analysed live, and
-run a **cascade**: "if AI automates this activity, what is the knock-on impact on
-roles and skills?"
+then overlays **Future Change** on every layer:
+- **activities** — an AI-opportunity assessment (AUTOMATE / AUGMENT / UNCHANGED, benefit, risk), evidence-backed
+- **skills** — a future-demand classification (DECLINING / AI_AUGMENTED / EMERGING / …), evidence-backed
+- **roles & processes** — a graph-derived roll-up (AI-exposure band, activity/skill breakdown), computed with no LLM call so every number is checkable against the rows it counts
+
+You can navigate the relationships (select a process → see affected roles; select a
+skill → see every role that needs it), add a brand-new process/role/skill and have
+it analysed live, and run a **cascade**: "if AI automates this activity, what is the
+knock-on impact on roles and skills?"
 
 ## Architecture
 
@@ -39,6 +43,7 @@ See `docs/ARCHITECTURE.md` (+ `docs/architecture.svg`) and `docs/DATA_MODEL.md`.
 | Sample data | `data/sample_graph.json` (load with `cli load-sample`) |
 | Research sources | `data/research_sources.json` (`cli export-sources`) |
 | Live demo script | `docs/DEMO.md` |
+| AI-tool disclosure | `docs/AI_ASSISTANCE_DISCLOSURE.md` |
 
 ## Setup
 

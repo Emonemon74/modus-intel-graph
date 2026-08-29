@@ -95,6 +95,9 @@ function EntityPanel({ detail, onNav }) {
   const n = detail.node
   const opp = detail.ai_opportunity
   const si = detail.skill_impact
+  const ri = detail.role_impact
+  const pi = detail.process_impact
+  const affectedRoles = detail.affected_roles
 
   const showEvidence = (claimType, id) =>
     api.evidence(claimType, id).then(setEvidence)
@@ -125,6 +128,36 @@ function EntityPanel({ detail, onNav }) {
           <p>{si.rationale}</p>
           <p><b>Confidence:</b> {si.confidence}</p>
           <button onClick={() => showEvidence('skill_impact', si.id)}>Show evidence</button>
+        </div>
+      )}
+
+      {ri && (
+        <div className="overlay">
+          <h3>Future Change <span className="tag">{ri.exposure_band} exposure</span></h3>
+          <p>{ri.headline}</p>
+          <p><b>AI exposure:</b> {ri.ai_exposure} · <b>Skill pressure:</b> {ri.skill_pressure}</p>
+          <p><b>Activities:</b> {JSON.stringify(ri.activity_breakdown)}</p>
+          <p><b>Skills:</b> {JSON.stringify(ri.skill_breakdown)}</p>
+          <p className="rationale">derived: {ri.derived_from}</p>
+        </div>
+      )}
+
+      {pi && (
+        <div className="overlay">
+          <h3>Process AI Roll-up</h3>
+          <p><b>AI-opportunity score:</b> {pi.ai_opportunity_score} ({pi.activities_total} activities)</p>
+          <p><b>Breakdown:</b> {JSON.stringify(pi.activity_breakdown)}</p>
+          {affectedRoles?.length > 0 && (
+            <>
+              <p><b>Affected roles ({affectedRoles.length}):</b></p>
+              <ul>
+                {affectedRoles.map((r) => (
+                  <li key={r.id} onClick={() => onNav('role', r.id)}>→ {r.label}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          <p className="rationale">derived: {pi.derived_from}</p>
         </div>
       )}
 

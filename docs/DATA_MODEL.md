@@ -42,6 +42,17 @@ processes never means new tables.
 | `cascade_runs` | query | trigger_type, trigger_id, hypothesis |
 | `cascade_results` | affected node | affected_type/id, depth, effect, reasoning, path_json |
 
+## Derived overlays (no table — computed on read)
+
+`app/graph/rollup.py` aggregates the stored graph on each request, with **no LLM
+call**, so every number is checkable against the rows it counts:
+
+| For | Computation |
+|---|---|
+| **role** `role_impact` | AI-exposure (activity-weighted over `ai_opportunities`), skill-pressure (weighted over `skill_impacts`), activity + skill breakdowns, exposure band, headline |
+| **process** `process_impact` | AI-opportunity score + activity breakdown from the process's activities |
+| **process** `affected_roles` | union of roles performing the process's activities |
+
 ## Evidence & traceability
 
 | Table | Fields |
