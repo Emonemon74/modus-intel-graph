@@ -44,9 +44,11 @@ export default function GraphView({ data, highlight = [], onSelect }) {
       ],
       layout: {
         name: 'cose', animate: false, nodeRepulsion: 20000,
-        idealEdgeLength: 120, nodeOverlap: 20, gravity: 0.25, padding: 30,
+        idealEdgeLength: 120, nodeOverlap: 20, gravity: 0.25, padding: 40,
+        fit: true,
       },
     })
+    cy.ready(() => cy.fit(undefined, 40))
     highlight.forEach((h) => cy.getElementById(h).addClass('hl'))
     cy.on('tap', 'node', (evt) => {
       const [type, id] = evt.target.id().split(':')

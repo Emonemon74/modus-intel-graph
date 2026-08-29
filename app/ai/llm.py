@@ -52,7 +52,7 @@ T = TypeVar("T", bound=BaseModel)
 # Predictable, and a 429 just means we wait the Retry-After and carry on.      #
 # --------------------------------------------------------------------------- #
 class _Pacer:
-    def __init__(self, tokens_per_min: int, avg_tokens: int = 650) -> None:
+    def __init__(self, tokens_per_min: int, avg_tokens: int = 520) -> None:
         self.min_gap = 0.0 if tokens_per_min <= 0 else 60.0 / max(1, tokens_per_min / avg_tokens)
         self._last = 0.0
         self._lock = threading.Lock()

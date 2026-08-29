@@ -90,6 +90,27 @@ function Explorer() {
 }
 
 // --------------------------------------------------------------------------- //
+function Pills({ obj }) {
+  return (
+    <div className="pills">
+      {Object.entries(obj).filter(([, v]) => v > 0).map(([k, v]) => (
+        <span key={k} className={`pill ${k}`}>{k.replace('_', ' ')}: {v}</span>
+      ))}
+    </div>
+  )
+}
+
+function Meter({ label, value }) {
+  return (
+    <div className="meter">
+      <span>{label}</span>
+      <div className="track"><div className="fill" style={{ width: `${Math.round(value * 100)}%` }} /></div>
+      <b>{value}</b>
+    </div>
+  )
+}
+
+// --------------------------------------------------------------------------- //
 function EntityPanel({ detail, onNav }) {
   const [evidence, setEvidence] = useState(null)
   const n = detail.node
@@ -135,9 +156,14 @@ function EntityPanel({ detail, onNav }) {
         <div className="overlay">
           <h3>Future Change <span className="tag">{ri.exposure_band} exposure</span></h3>
           <p>{ri.headline}</p>
-          <p><b>AI exposure:</b> {ri.ai_exposure} · <b>Skill pressure:</b> {ri.skill_pressure}</p>
-          <p><b>Activities:</b> {JSON.stringify(ri.activity_breakdown)}</p>
-          <p><b>Skills:</b> {JSON.stringify(ri.skill_breakdown)}</p>
+          <div className="meters">
+            <Meter label="AI exposure" value={ri.ai_exposure} />
+            <Meter label="Skill pressure" value={ri.skill_pressure} />
+          </div>
+          <p><b>Activities ({ri.activities_total}):</b></p>
+          <Pills obj={ri.activity_breakdown} />
+          <p><b>Skills ({ri.skills_total}):</b></p>
+          <Pills obj={ri.skill_breakdown} />
           <p className="rationale">derived: {ri.derived_from}</p>
         </div>
       )}
@@ -145,8 +171,9 @@ function EntityPanel({ detail, onNav }) {
       {pi && (
         <div className="overlay">
           <h3>Process AI Roll-up</h3>
-          <p><b>AI-opportunity score:</b> {pi.ai_opportunity_score} ({pi.activities_total} activities)</p>
-          <p><b>Breakdown:</b> {JSON.stringify(pi.activity_breakdown)}</p>
+          <div className="meters"><Meter label="AI-opportunity score" value={pi.ai_opportunity_score} /></div>
+          <p><b>Activities ({pi.activities_total}):</b></p>
+          <Pills obj={pi.activity_breakdown} />
           {affectedRoles?.length > 0 && (
             <>
               <p><b>Affected roles ({affectedRoles.length}):</b></p>
@@ -199,6 +226,7 @@ function Cascade() {
   const [nodes, setNodes] = useState([])
   const [id, setId] = useState(null)
   const [hyp, setHyp] = useState('AI fully automates this activity')
+  const [depth, setDepth] = useState(1)
   const [busy, setBusy] = useState(false)
   const [result, setResult] = useState(null)
 
@@ -207,7 +235,7 @@ function Cascade() {
   const run = async () => {
     setBusy(true); setResult(null)
     try {
-      const { run_id } = await api.cascade(type, Number(id), hyp)
+      const { run_id } = await api.cascade(type, Number(id), hyp, depth)
       setResult(await api.cascadeResult(run_id))
     } catch (e) { alert(e.message) } finally { setBusy(false) }
   }
@@ -223,6 +251,11 @@ function Cascade() {
           {nodes.map((n) => <option key={n.id} value={n.id}>{n.label}</option>)}
         </select>
         <input value={hyp} onChange={(e) => setHyp(e.target.value)} placeholder="hypothesis" />
+        <select value={depth} onChange={(e) => setDepth(+e.target.value)} title="cascade depth">
+          <option value={1}>depth 1 (~30s)</option>
+          <option value={2}>depth 2 (~2min)</option>
+          <option value={3}>depth 3 (slow)</option>
+        </select>
         <button disabled={!id || busy} onClick={run}>{busy ? 'reasoning…' : 'Run cascade'}</button>
       </div>
 

@@ -24,10 +24,10 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ type, name, context }),
     }),
-  cascade: (trigger_type, trigger_id, hypothesis) =>
+  cascade: (trigger_type, trigger_id, hypothesis, max_depth) =>
     req('/cascade', {
       method: 'POST',
-      body: JSON.stringify({ trigger_type, trigger_id, hypothesis }),
+      body: JSON.stringify({ trigger_type, trigger_id, hypothesis, max_depth }),
     }),
   cascadeResult: (runId) => req(`/cascade/${runId}`),
 }

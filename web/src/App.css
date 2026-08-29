@@ -39,7 +39,18 @@ main { flex: 1; overflow: hidden; }
 .overlay { background: #1e293b; border-radius: 6px; padding: 10px; margin: 10px 0; }
 .overlay h3 { font-size: 13px; margin: 0 0 6px; }
 .overlay p { margin: 4px 0; font-size: 12px; }
-.rationale { color: #94a3b8; font-style: italic; }
+.rationale { color: #94a3b8; font-style: italic; font-size: 11px; }
+.pills { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0 8px; }
+.pill { background: #475569; padding: 2px 7px; border-radius: 10px; font-size: 11px; }
+.pill.AUTOMATE { background: #b91c1c; } .pill.AUGMENT { background: #b45309; }
+.pill.DECLINING { background: #b91c1c; } .pill.CHANGING { background: #b45309; }
+.pill.EMERGING { background: #15803d; } .pill.INCREASING { background: #15803d; }
+.pill.ENDURING_HUMAN { background: #1d4ed8; }
+.meters { margin: 8px 0; }
+.meter { display: flex; align-items: center; gap: 8px; font-size: 11px; margin: 3px 0; }
+.meter span { width: 110px; color: #94a3b8; }
+.meter .track { flex: 1; height: 7px; background: #334155; border-radius: 4px; overflow: hidden; }
+.meter .fill { height: 100%; background: #6366f1; }
 .tag { background: #475569; padding: 1px 6px; border-radius: 4px; font-size: 10px; }
 .tag.AUTOMATE { background: #dc2626; } .tag.AUGMENT { background: #d97706; }
 .tag.UNCHANGED { background: #475569; }

@@ -1,53 +1,96 @@
-# 10–15 minute live demo script
+# Live demo runbook (10–15 min)
 
-## 0. Before the panel arrives
+## Before the session
+
 ```bash
-uv run uvicorn app.api.main:app --port 8000      # serves the built UI too
+cd modus-intel-graph
+git pull
+uv run python -m app.cli load-sample        # full graph + overlays + a pre-computed cascade
+cd web && npm run build && cd ..
+uv run uvicorn app.api.main:app --port 8000
 ```
-Open `http://localhost:8000`. Graph already ingested for **Retail Banking**.
 
-## 1. The problem & the architecture (2 min)
-- Show `docs/ARCHITECTURE.md`. Four layers, each a real component.
-- "The graph is not fixture data — it was researched and built by the pipeline.
-  Every AI claim links to stored evidence, and every LLM call is logged."
-- Show `data/llm_log.db` count / one row.
+Open **http://localhost:8000**. Have a second terminal ready showing:
+```
+sqlite3 data/llm_log.db "select purpose, count(*) from llm_calls group by purpose;"
+```
 
-## 2. Navigate the connected graph (3 min)
-- **Explorer** tab. Pick a Process (e.g. *Loan Application Evaluation*).
-  Graph shows stage → process → activities → roles → skills.
-- Click an **Activity** → entity panel shows the **AI Opportunity**
-  (AUTOMATE/AUGMENT + benefit/risk/confidence). Hit **Show evidence** →
-  research snippets with similarity scores + source URLs.
-- Click a **Skill** → **Skill Impact** classification (e.g. DECLINING) + evidence.
-- Click a **Role** → **Future Change** panel: AI-exposure band, how many of its
-  activities are automatable vs augmented, how its skills split across
-  declining/emerging — all computed from the graph, no LLM call.
-- Click a **Process** → AI roll-up score + **affected roles** listed directly.
-- "Select a skill → see every role that needs it" — pick a skill, read
-  `ROLE_HAS_SKILL` / `ACTIVITY_REQUIRES_SKILL` neighbours.
+**Timing note:** the free Groq tier queues requests, so a *live* AI action takes
+30–90 s. Talk through the architecture while it runs. The graph, all overlays,
+evidence, and one cascade are pre-loaded and instant. Keep the run to ONE fresh
+browser session — don't pre-click things that spend the token budget.
 
-## 3. Cascading impact (3 min)
-- **Cascade** tab. Trigger = an Activity with high automation potential.
-  Hypothesis: *"AI fully automates this activity."* Run.
-- Walk the output: affected **roles** → their other **activities** →
-  **skills** that rise/fall, each with reasoning and the graph path.
-- "This is derived by walking the graph and reasoning at each hop — not one
-  giant prompt."
+---
 
-## 4. The surprise-record test (3 min) — hand control to the panel
-- **Add** tab. Ask the panel to name any Retail Banking process, role, or skill
-  **not** already in the list.
-- Enter it. ~30–60s. It's inserted, broken into activities, skills attached,
-  roles linked, AI opportunity + evidence generated.
-- Switch to **Explorer**, open the new node, show its neighbours and overlay.
-- Run a **Cascade** on the brand-new node.
+## 1 · Problem & architecture (2 min)
 
-## 5. Scale question (1 min)
-- `docs/ARCHITECTURE.md` + README "How it scales" section.
-- Fixed schema; `edges` table + indexes; resumable per-item job; embedding-based
-  skill dedup; uniform traversal; LLM is the only throughput limit and is
-  swappable / parallelisable.
+- Open `docs/architecture.svg`. Five layers, each a real component; candidates
+  chose their own — this one is FastAPI + SQLite + FAISS + an OpenAI-compatible LLM.
+- "The graph is **not fixture data** — a 9-step pipeline researched and built it.
+  Every AI claim links to a stored source, and every model call is logged."
+  → run the `llm_calls` query in terminal 2: ~470 calls, grouped by purpose.
 
-## Fallback talking point
-If Groq is unreachable during the demo: show `.env.example`, change 3 lines to
-the Ollama block, `ollama serve` — same code path.
+## 2 · Navigate the connected graph (3–4 min) — all instant
+
+- **Explorer** → pick process **Automated Risk Scoring**.
+  - Right panel: **Process AI Roll-up** — score 0.88, 3 of 4 activities automatable,
+    **Affected roles (5)** listed directly (answers "select a process → see roles").
+  - "These numbers are computed from the graph on read — no LLM — so every one is
+    checkable against the rows it counts."
+- Click activity **Model execution** → **AI Opportunity** (AUTOMATE, benefit, risk,
+  confidence) → **Show evidence** → snippets with similarity scores + source URLs
+  (one is an OCC Comptroller's Handbook).
+- Click a **skill** (e.g. *Statistical Modeling*) → **Skill Impact** classification
+  + evidence.
+- Click a **role** (e.g. *Loan Officer – Consumer Lending*) → **Future Change**
+  panel: AI-exposure band, activity breakdown (automate/augment), skill breakdown
+  (declining/emerging), all graph-derived.
+- Click a skill → its `ROLE_HAS_SKILL` neighbours = "every role that needs this skill".
+
+## 3 · Cascading impact (2–3 min)
+
+- **Cascade** tab → trigger **activity / Model execution**, hypothesis
+  *"AI fully automates this activity"*, **depth 1**, Run.
+  - ~30–60 s. While it runs: "this isn't one prompt — it walks the graph and asks
+    the model one question per hop: is this neighbour materially affected?"
+  - Result: direct impacts on skills, the parent process, and the CTO role, each
+    with reasoning + the graph path.
+- Then: "it recurses — here's the same trigger at depth 2 I ran earlier"
+  → the pre-loaded run shows 16 impacts down to depth 2 (Model execution →
+  Statistical Modeling → Model calibration, etc.). *(In the UI, re-run at depth 2
+  only if you have 2 min to spare; otherwise describe it from the loaded data.)*
+
+## 4 · The surprise-record test (3 min) — hand control to the panel
+
+- **Add** tab. Ask a judge to name any Retail Banking **process, role, or skill**
+  not in the list.
+- Enter it. 60–90 s. It is inserted, broken into activities, skills attached and
+  de-duplicated against existing ones, existing roles linked, an AI-opportunity
+  assessment generated.
+- Switch to **Explorer**, open the new node, show its neighbours + overlay.
+- Optionally run a depth-1 **Cascade** on it.
+
+## 5 · Scale (1 min)
+
+- README "How it scales" + `docs/ARCHITECTURE.md`.
+- "One `edges` table, indexed both directions; ingest is a resumable per-item job;
+  skills de-duped by embedding similarity so N processes don't explode into N×k
+  skills; traversal and cascade use one neighbour query. The only throughput limit
+  is the LLM — raise the rate cap, add workers, or point `LLM_BASE_URL` at a local
+  Ollama. Storage → change `DATABASE_URL` to Postgres, no code change."
+
+## If Groq is unreachable mid-demo
+
+Show `.env.example` → change the 3 Ollama lines → `ollama serve`. Same code path.
+The pre-loaded graph, overlays, evidence and cascade stay fully browsable regardless.
+
+## What to be ready to explain (judges will probe)
+
+| Component | One-liner |
+|---|---|
+| `app/models.py` | one typed `edges` table → uniform traversal, scales by rows not tables |
+| `app/graph/traverse.py` | the single neighbour query everything is built on |
+| `app/pipeline/ingest.py` | 9 steps, each commits per item → crash-resumable |
+| `app/pipeline/cascade.py` | bounded BFS + one LLM judgement per hop |
+| `app/graph/rollup.py` | role/process overlays computed from the graph, no LLM |
+| `app/ai/llm.py` | structured JSON output, validation-retry, rate pacing, audit log |

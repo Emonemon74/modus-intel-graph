@@ -19296,6 +19296,789 @@
       "quote": "Configurable AI risk scoring for vendor, compliance, and AML assessments. Automated risk rating with multi-factor scoring matrices and real-time analysis.",
       "relevance": 0.46853795647621155,
       "created_at": "2026-08-29 18:34:38.247999"
+    },
+    {
+      "id": 1107,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.5004838705062866,
+      "created_at": "2026-08-29 19:32:07.364017"
+    },
+    {
+      "id": 1108,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.4629988372325897,
+      "created_at": "2026-08-29 19:32:07.364022"
+    },
+    {
+      "id": 1109,
+      "claim_type": "cascade_result",
+      "claim_id": 20,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.591312825679779,
+      "created_at": "2026-08-29 19:32:07.430888"
+    },
+    {
+      "id": 1110,
+      "claim_type": "cascade_result",
+      "claim_id": 20,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.5660696625709534,
+      "created_at": "2026-08-29 19:32:07.430892"
+    },
+    {
+      "id": 1111,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 102,
+      "quote": "Python is an interpreted, high-level, general-purpose programming language designed for code readability and simplicity, featuring a dynamic type system and support for...",
+      "relevance": 0.5232597589492798,
+      "created_at": "2026-08-29 19:32:13.111348"
+    },
+    {
+      "id": 1112,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.45517587661743164,
+      "created_at": "2026-08-29 19:32:13.111354"
+    },
+    {
+      "id": 1113,
+      "claim_type": "cascade_result",
+      "claim_id": 21,
+      "source_id": 102,
+      "quote": "Python is an interpreted, high-level, general-purpose programming language designed for code readability and simplicity, featuring a dynamic type system and support for...",
+      "relevance": 0.5252994894981384,
+      "created_at": "2026-08-29 19:32:13.338000"
+    },
+    {
+      "id": 1114,
+      "claim_type": "cascade_result",
+      "claim_id": 21,
+      "source_id": 103,
+      "quote": "Python is a programming language that lets you work quickly and integrate systems more effectively. Download Python source code and installers are available ...",
+      "relevance": 0.49902594089508057,
+      "created_at": "2026-08-29 19:32:13.338014"
+    },
+    {
+      "id": 1115,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.6709328293800354,
+      "created_at": "2026-08-29 19:32:19.620515"
+    },
+    {
+      "id": 1116,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 81,
+      "quote": "6 days ago \u00b7 Summary: credit risk analysis is a crucial aspect of financial decision-making, particularly for lenders and investors. It involves assessing the likelihood of a borrower or debtor defaulting on their financial obligations.",
+      "relevance": 0.5856989622116089,
+      "created_at": "2026-08-29 19:32:19.620519"
+    },
+    {
+      "id": 1117,
+      "claim_type": "cascade_result",
+      "claim_id": 22,
+      "source_id": 81,
+      "quote": "6 days ago \u00b7 Summary: credit risk analysis is a crucial aspect of financial decision-making, particularly for lenders and investors. It involves assessing the likelihood of a borrower or debtor defaulting on their financial obligations.",
+      "relevance": 0.7042461633682251,
+      "created_at": "2026-08-29 19:32:19.849821"
+    },
+    {
+      "id": 1118,
+      "claim_type": "cascade_result",
+      "claim_id": 22,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.5769577026367188,
+      "created_at": "2026-08-29 19:32:19.849862"
+    },
+    {
+      "id": 1119,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.741134524345398,
+      "created_at": "2026-08-29 19:32:26.197737"
+    },
+    {
+      "id": 1120,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.7402032613754272,
+      "created_at": "2026-08-29 19:32:26.197742"
+    },
+    {
+      "id": 1121,
+      "claim_type": "cascade_result",
+      "claim_id": 23,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.7134402990341187,
+      "created_at": "2026-08-29 19:32:26.315622"
+    },
+    {
+      "id": 1122,
+      "claim_type": "cascade_result",
+      "claim_id": 23,
+      "source_id": 7,
+      "quote": "Automated risk scoring is the process of assigning numerical or categorical risk levels to vendors using predefined algorithms and data inputs.",
+      "relevance": 0.7083051800727844,
+      "created_at": "2026-08-29 19:32:26.315626"
+    },
+    {
+      "id": 1123,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.5715901851654053,
+      "created_at": "2026-08-29 19:32:32.663340"
+    },
+    {
+      "id": 1124,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 197,
+      "quote": "Retail banking operations is the way bankers refer to the people in the bank that make the bank \u201coperate\u201d on a daily basis.",
+      "relevance": 0.4663326144218445,
+      "created_at": "2026-08-29 19:32:32.663348"
+    },
+    {
+      "id": 1125,
+      "claim_type": "cascade_result",
+      "claim_id": 24,
+      "source_id": 197,
+      "quote": "Retail banking operations is the way bankers refer to the people in the bank that make the bank \u201coperate\u201d on a daily basis.",
+      "relevance": 0.45551106333732605,
+      "created_at": "2026-08-29 19:32:32.734044"
+    },
+    {
+      "id": 1126,
+      "claim_type": "cascade_result",
+      "claim_id": 24,
+      "source_id": 59,
+      "quote": "Master regulatory compliance with expert guidance on requirements, frameworks and AI-powered solutions for managing evolving regulations.",
+      "relevance": 0.451651394367218,
+      "created_at": "2026-08-29 19:32:32.734052"
+    },
+    {
+      "id": 1127,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 140,
+      "quote": "8 Jul 2025 \u00b7 Audience segmentation involves dividing a customer base into distinct, smaller groups with similar traits or common characteristics.",
+      "relevance": 0.5252511501312256,
+      "created_at": "2026-08-29 19:32:39.142989"
+    },
+    {
+      "id": 1128,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 139,
+      "quote": "Audience segmentation is a marketing strategy based on identifying subgroups within the target audience in order to deliver more tailored messaging and build ...",
+      "relevance": 0.5079998970031738,
+      "created_at": "2026-08-29 19:32:39.143001"
+    },
+    {
+      "id": 1129,
+      "claim_type": "cascade_result",
+      "claim_id": 25,
+      "source_id": 140,
+      "quote": "8 Jul 2025 \u00b7 Audience segmentation involves dividing a customer base into distinct, smaller groups with similar traits or common characteristics.",
+      "relevance": 0.5744762420654297,
+      "created_at": "2026-08-29 19:32:39.238435"
+    },
+    {
+      "id": 1130,
+      "claim_type": "cascade_result",
+      "claim_id": 25,
+      "source_id": 139,
+      "quote": "Audience segmentation is a marketing strategy based on identifying subgroups within the target audience in order to deliver more tailored messaging and build ...",
+      "relevance": 0.5302851796150208,
+      "created_at": "2026-08-29 19:32:39.238476"
+    },
+    {
+      "id": 1131,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.40727099776268005,
+      "created_at": "2026-08-29 19:32:45.755982"
+    },
+    {
+      "id": 1132,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 33,
+      "quote": "December 29, 2025 - AI-adjusted pricing based on performance, efficiency, and market conditions. \u201cThis month\u2019s fee is calculated based on: [spend volume] \u00d7 [efficiency multiplier] \u00d7 [baseline rate].\u201d \u00b7 Controversial but potentially more fair than static models.",
+      "relevance": 0.35940128564834595,
+      "created_at": "2026-08-29 19:32:45.755992"
+    },
+    {
+      "id": 1133,
+      "claim_type": "cascade_result",
+      "claim_id": 26,
+      "source_id": 31,
+      "quote": "June 21, 2026 - Understanding the Model Rate Card A model rate card is an essential document used in the fashion and modeling industry that outlines the fees and services associated with a model\u2019s work. This card serves as a comprehensive guide for clients, agencies, and models themselves, detailing the costs of hiring particular talent for various projects, from...",
+      "relevance": 0.3102544844150543,
+      "created_at": "2026-08-29 19:32:45.834820"
+    },
+    {
+      "id": 1134,
+      "claim_type": "cascade_result",
+      "claim_id": 26,
+      "source_id": 100,
+      "quote": "May 30, 2026 \u00b7 Statistical modeling is an important process in the field of data science. It involves identifying the best statistical model to identify a relationship in a given data set, such as census data, public health data, or a company's user data. Think of statistical modeling as a framework.",
+      "relevance": 0.29632365703582764,
+      "created_at": "2026-08-29 19:32:45.834823"
+    },
+    {
+      "id": 1135,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.7059265971183777,
+      "created_at": "2026-08-29 19:32:52.159728"
+    },
+    {
+      "id": 1136,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.5500349998474121,
+      "created_at": "2026-08-29 19:32:52.159743"
+    },
+    {
+      "id": 1137,
+      "claim_type": "cascade_result",
+      "claim_id": 27,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.6759197115898132,
+      "created_at": "2026-08-29 19:32:52.310821"
+    },
+    {
+      "id": 1138,
+      "claim_type": "cascade_result",
+      "claim_id": 27,
+      "source_id": 6,
+      "quote": "Configurable AI risk scoring for vendor, compliance, and AML assessments. Automated risk rating with multi-factor scoring matrices and real-time analysis.",
+      "relevance": 0.5628873109817505,
+      "created_at": "2026-08-29 19:32:52.310826"
+    },
+    {
+      "id": 1139,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.4249364137649536,
+      "created_at": "2026-08-29 19:32:58.735000"
+    },
+    {
+      "id": 1140,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 111,
+      "quote": "Business rules provide the foundation for automation systems by taking documented or undocumented information. They then convert this information into conditional statements. For example, when conducting a purchase order, there might be a different approval process depending on the cost.",
+      "relevance": 0.37993907928466797,
+      "created_at": "2026-08-29 19:32:58.735012"
+    },
+    {
+      "id": 1141,
+      "claim_type": "cascade_result",
+      "claim_id": 28,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.5662313103675842,
+      "created_at": "2026-08-29 19:32:58.834318"
+    },
+    {
+      "id": 1142,
+      "claim_type": "cascade_result",
+      "claim_id": 28,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.5452644228935242,
+      "created_at": "2026-08-29 19:32:58.834320"
+    },
+    {
+      "id": 1143,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.4440475404262543,
+      "created_at": "2026-08-29 19:33:05.122325"
+    },
+    {
+      "id": 1144,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 209,
+      "quote": "6 Mar 2026 \u00b7 Data Mining is the process of discovering meaningful patterns and insights from large datasets using statistical, machine learning and ...",
+      "relevance": 0.41349488496780396,
+      "created_at": "2026-08-29 19:33:05.122338"
+    },
+    {
+      "id": 1145,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.5044904947280884,
+      "created_at": "2026-08-29 19:33:11.748745"
+    },
+    {
+      "id": 1146,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.4863097071647644,
+      "created_at": "2026-08-29 19:33:11.748758"
+    },
+    {
+      "id": 1147,
+      "claim_type": "cascade_result",
+      "claim_id": 29,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.5403896570205688,
+      "created_at": "2026-08-29 19:33:11.912611"
+    },
+    {
+      "id": 1148,
+      "claim_type": "cascade_result",
+      "claim_id": 29,
+      "source_id": 6,
+      "quote": "Configurable AI risk scoring for vendor, compliance, and AML assessments. Automated risk rating with multi-factor scoring matrices and real-time analysis.",
+      "relevance": 0.49479618668556213,
+      "created_at": "2026-08-29 19:33:11.912621"
+    },
+    {
+      "id": 1149,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.49423861503601074,
+      "created_at": "2026-08-29 19:33:18.454486"
+    },
+    {
+      "id": 1150,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.42710962891578674,
+      "created_at": "2026-08-29 19:33:18.454491"
+    },
+    {
+      "id": 1151,
+      "claim_type": "cascade_result",
+      "claim_id": 30,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.6105005145072937,
+      "created_at": "2026-08-29 19:33:18.689953"
+    },
+    {
+      "id": 1152,
+      "claim_type": "cascade_result",
+      "claim_id": 30,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.5966857671737671,
+      "created_at": "2026-08-29 19:33:18.689989"
+    },
+    {
+      "id": 1153,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.5635518431663513,
+      "created_at": "2026-08-29 19:33:25.062477"
+    },
+    {
+      "id": 1154,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 82,
+      "quote": "Apr 24, 2026 \u00b7 Credit analysis assesses a borrower's financial health to determine their ability to repay debt and the risk of default. Credit analysis evaluates an issuer's ability to meet debt...",
+      "relevance": 0.4991351068019867,
+      "created_at": "2026-08-29 19:33:25.062482"
+    },
+    {
+      "id": 1155,
+      "claim_type": "cascade_result",
+      "claim_id": 31,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.6003415584564209,
+      "created_at": "2026-08-29 19:33:25.243321"
+    },
+    {
+      "id": 1156,
+      "claim_type": "cascade_result",
+      "claim_id": 31,
+      "source_id": 6,
+      "quote": "Configurable AI risk scoring for vendor, compliance, and AML assessments. Automated risk rating with multi-factor scoring matrices and real-time analysis.",
+      "relevance": 0.5839993953704834,
+      "created_at": "2026-08-29 19:33:25.243325"
+    },
+    {
+      "id": 1157,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.6124395728111267,
+      "created_at": "2026-08-29 19:33:31.017843"
+    },
+    {
+      "id": 1158,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.48088181018829346,
+      "created_at": "2026-08-29 19:33:31.017852"
+    },
+    {
+      "id": 1159,
+      "claim_type": "cascade_result",
+      "claim_id": 32,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.5978095531463623,
+      "created_at": "2026-08-29 19:33:31.109319"
+    },
+    {
+      "id": 1160,
+      "claim_type": "cascade_result",
+      "claim_id": 32,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.5160354971885681,
+      "created_at": "2026-08-29 19:33:31.109325"
+    },
+    {
+      "id": 1161,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.4594961404800415,
+      "created_at": "2026-08-29 19:33:37.742792"
+    },
+    {
+      "id": 1162,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 181,
+      "quote": "Data modeling is the process of creating visual representations, diagrams, or abstract structures that illustrate the organization, relationships, attributes, and flows of data within...",
+      "relevance": 0.4413708746433258,
+      "created_at": "2026-08-29 19:33:37.742801"
+    },
+    {
+      "id": 1163,
+      "claim_type": "cascade_result",
+      "claim_id": 33,
+      "source_id": 181,
+      "quote": "Data modeling is the process of creating visual representations, diagrams, or abstract structures that illustrate the organization, relationships, attributes, and flows of data within...",
+      "relevance": 0.5549274682998657,
+      "created_at": "2026-08-29 19:33:38.008376"
+    },
+    {
+      "id": 1164,
+      "claim_type": "cascade_result",
+      "claim_id": 33,
+      "source_id": 182,
+      "quote": "Data modeling is the practice of designing how data is structured and related so it can be stored, understood and analyzed consistently across an organization.",
+      "relevance": 0.5456786155700684,
+      "created_at": "2026-08-29 19:33:38.008380"
+    },
+    {
+      "id": 1165,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 92,
+      "quote": "Inside Microsoft SQL Server 2005: T-SQL Querying is a comprehensive technical reference that explores the internal architecture of Transact-SQL (T-SQL) in Microsoft SQL Server 2005, with a primary focus on set-based querying, query optimization, and\u2026",
+      "relevance": 0.5272021293640137,
+      "created_at": "2026-08-29 19:33:44.213373"
+    },
+    {
+      "id": 1166,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 95,
+      "quote": "Apr 28, 2026 \u00b7 SQL concepts and queries form the foundation of working with relational databases, enabling users to store, manage and retrieve structured data efficiently. By using SQL commands, users can perform operations like creating tables, inserting data, and querying information from databases.",
+      "relevance": 0.46525701880455017,
+      "created_at": "2026-08-29 19:33:44.213385"
+    },
+    {
+      "id": 1167,
+      "claim_type": "cascade_result",
+      "claim_id": 34,
+      "source_id": 92,
+      "quote": "Inside Microsoft SQL Server 2005: T-SQL Querying is a comprehensive technical reference that explores the internal architecture of Transact-SQL (T-SQL) in Microsoft SQL Server 2005, with a primary focus on set-based querying, query optimization, and\u2026",
+      "relevance": 0.5668846964836121,
+      "created_at": "2026-08-29 19:33:44.304731"
+    },
+    {
+      "id": 1168,
+      "claim_type": "cascade_result",
+      "claim_id": 34,
+      "source_id": 95,
+      "quote": "Apr 28, 2026 \u00b7 SQL concepts and queries form the foundation of working with relational databases, enabling users to store, manage and retrieve structured data efficiently. By using SQL commands, users can perform operations like creating tables, inserting data, and querying information from databases.",
+      "relevance": 0.5432236194610596,
+      "created_at": "2026-08-29 19:33:44.304736"
+    },
+    {
+      "id": 1169,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.38361692428588867,
+      "created_at": "2026-08-29 19:33:50.481339"
+    },
+    {
+      "id": 1170,
+      "claim_type": "cascade_probe",
+      "claim_id": 5,
+      "source_id": 19,
+      "quote": "Antavo AI Loyalty Cloud is a software that enables organizations to manage and optimize customer loyalty programs across multiple channels. The software supports the creation and customization of loyalty campaigns, including point-based systems, rewards, tiers, and challenges.",
+      "relevance": 0.34246066212654114,
+      "created_at": "2026-08-29 19:33:50.481348"
+    },
+    {
+      "id": 1171,
+      "claim_type": "cascade_probe",
+      "claim_id": 6,
+      "source_id": 8,
+      "quote": "Automated risk assessment tools use AI to identify, evaluate, and prioritize business risks in real-time, improving decision-making and compliance efficiency.",
+      "relevance": 0.5004838705062866,
+      "created_at": "2026-08-29 19:37:09.778001"
+    },
+    {
+      "id": 1172,
+      "claim_type": "cascade_probe",
+      "claim_id": 6,
+      "source_id": 5,
+      "quote": "What is Automated Risk Assessment? Key Steps & Best Practices The article explains that automated risk assessment uses AI, data analytics and rule-based systems to evaluate and score risks in real time, replacing slow, manual reviews with consistent, scalable analysis and dynamic risk-scoring workflows.",
+      "relevance": 0.4629988372325897,
+      "created_at": "2026-08-29 19:37:09.778005"
+    },
+    {
+      "id": 1173,
+      "claim_type": "cascade_result",
+      "claim_id": 35,
+      "source_id": 99,
+      "quote": "Statistical modelling is the process of applying statistical analysis to datasets in order to develop mathematical representations, known as statistical models, that capture relationships between variables and facilitate inference about underlying d\u2026",
+      "relevance": 0.49826228618621826,
+      "created_at": "2026-08-29 19:37:10.524718"
+    },
+    {
+      "id": 1174,
+      "claim_type": "cascade_result",
+      "claim_id": 35,
+      "source_id": 100,
+      "quote": "May 30, 2026 \u00b7 Statistical modeling is an important process in the field of data science. It involves identifying the best statistical model to identify a relationship in a given data set, such as census data, public health data, or a company's user data. Think of statistical modeling as a framework.",
+      "relevance": 0.47979313135147095,
+      "created_at": "2026-08-29 19:37:10.524742"
+    }
+  ],
+  "cascade_runs": [
+    {
+      "id": 4,
+      "trigger_type": "activity",
+      "trigger_id": 6,
+      "hypothesis": "AI fully automates this activity",
+      "created_at": "2026-08-29 16:26:59.519235"
+    }
+  ],
+  "cascade_results": [
+    {
+      "id": 4,
+      "run_id": 4,
+      "affected_type": "skill",
+      "affected_id": 14,
+      "depth": 1,
+      "effect": "Statistical Modeling shifts from manual model building to reliance on AI-generated risk scores, reducing hands\u2011on statistical work",
+      "reasoning": "AI\u2011driven model execution automates risk assessment, which traditionally depends on statistical modeling, thus the skill is downstream impacted",
+      "path_json": "[\"activity:Model execution\", \"skill:Statistical Modeling\"]"
+    },
+    {
+      "id": 5,
+      "run_id": 4,
+      "affected_type": "skill",
+      "affected_id": 9,
+      "depth": 1,
+      "effect": "Credit risk analysis becomes fully automated, eliminating manual modeling and accelerating decision cycles.",
+      "reasoning": "Model execution automation directly replaces the analytical computations used in credit risk scoring, so the skill's core tasks are performed by AI, constituting a meaningful downstream impact.",
+      "path_json": "[\"activity:Model execution\", \"skill:Credit Risk Analysis\"]"
+    },
+    {
+      "id": 6,
+      "run_id": 4,
+      "affected_type": "process",
+      "affected_id": 2,
+      "depth": 1,
+      "effect": "Automated Risk Scoring becomes fully automated, delivering real\u2011time scores with no manual model runs",
+      "reasoning": "Model execution is the computational core of risk scoring; automating it removes the human step, directly altering the scoring workflow and its latency",
+      "path_json": "[\"activity:Model execution\", \"process:Automated Risk Scoring\"]"
+    },
+    {
+      "id": 7,
+      "run_id": 4,
+      "affected_type": "role",
+      "affected_id": 15,
+      "depth": 1,
+      "effect": "CTO must shift focus from manual model oversight to governance of automated AI pipelines",
+      "reasoning": "Full automation of model execution changes the CTO's role from direct management of execution to overseeing AI system reliability, compliance, and integration within retail banking tech strategy",
+      "path_json": "[\"activity:Model execution\", \"role:Chief Technology Officer \\u2013 Retail Banking\"]"
+    },
+    {
+      "id": 8,
+      "run_id": 4,
+      "affected_type": "activity",
+      "affected_id": 22,
+      "depth": 2,
+      "effect": "Segment customers becomes automated through AI-generated statistical models, reducing manual segmentation effort",
+      "reasoning": "Full automation of statistical modeling enables AI to create customer clusters directly, so the segmentation activity is downstreamly impacted",
+      "path_json": "[\"activity:Model execution\", \"skill:Statistical Modeling\", \"activity:Segment customers\"]"
+    },
+    {
+      "id": 9,
+      "run_id": 4,
+      "affected_type": "activity",
+      "affected_id": 30,
+      "depth": 2,
+      "effect": "Model calibration becomes largely automated, with AI self\u2011tuning parameters rather than manual adjustment",
+      "reasoning": "Full automation of model execution implies the system will internally adjust parameters to maintain performance, eliminating the traditional manual calibration step",
+      "path_json": "[\"activity:Model execution\", \"skill:Statistical Modeling\", \"activity:Model calibration\"]"
+    },
+    {
+      "id": 10,
+      "run_id": 4,
+      "affected_type": "activity",
+      "affected_id": 34,
+      "depth": 2,
+      "effect": "Risk and profitability modeling becomes faster and more data\u2011driven as AI\u2011generated statistical models replace manual analysis.",
+      "reasoning": "The activity 'Model execution' with the skill 'Statistical Modeling' is automated by AI, and risk/profitability modeling relies on those statistical models, so the automation cascades downstream, fundamentally changing how the models are built and updated.",
+      "path_json": "[\"activity:Model execution\", \"skill:Statistical Modeling\", \"activity:Risk and profitability modeling\"]"
+    },
+    {
+      "id": 11,
+      "run_id": 4,
+      "affected_type": "activity",
+      "affected_id": 4,
+      "depth": 2,
+      "effect": "The pre\u2011screen eligibility rules check becomes fully automated, shifting from manual verification to AI\u2011driven rule execution.",
+      "reasoning": "AI\u2011driven credit risk analysis replaces manual risk assessment, so the upstream automation directly eliminates manual pre\u2011screen steps, creating a downstream impact.",
+      "path_json": "[\"activity:Model execution\", \"skill:Credit Risk Analysis\", \"activity:Pre\\u2011screen eligibility rules check\"]"
+    },
+    {
+      "id": 12,
+      "run_id": 4,
+      "affected_type": "activity",
+      "affected_id": 5,
+      "depth": 2,
+      "effect": "Data collection and preprocessing becomes more automated, requiring tighter integration with real-time data pipelines and less manual cleaning",
+      "reasoning": "Automating model execution for risk scoring shifts responsibility for data readiness to upstream systems, so preprocessing must be streamlined and continuously fed to support the fully automated AI workflow.",
+      "path_json": "[\"activity:Model execution\", \"process:Automated Risk Scoring\", \"activity:Data collection and preprocessing\"]"
+    },
+    {
+      "id": 13,
+      "run_id": 4,
+      "affected_type": "activity",
+      "affected_id": 7,
+      "depth": 2,
+      "effect": "Score validation and exception handling become largely automated, with AI flagging anomalies and exceptions without manual review",
+      "reasoning": "Full AI automation of model execution shifts risk scoring from manual to algorithmic, so downstream validation and exception processes are handled by the same AI layer, reducing manual effort",
+      "path_json": "[\"activity:Model execution\", \"process:Automated Risk Scoring\", \"activity:Score validation and exception handling\"]"
+    },
+    {
+      "id": 14,
+      "run_id": 4,
+      "affected_type": "activity",
+      "affected_id": 8,
+      "depth": 2,
+      "effect": "Decision communication shifts to automated notification of AI-generated risk scores",
+      "reasoning": "AI-driven risk scoring eliminates manual assessment, so communicating decisions must now convey system\u2011generated scores, often via automated alerts or dashboards, altering the communication process.",
+      "path_json": "[\"activity:Model execution\", \"process:Automated Risk Scoring\", \"activity:Decision communication\"]"
+    },
+    {
+      "id": 15,
+      "run_id": 4,
+      "affected_type": "stage",
+      "affected_id": 3,
+      "depth": 2,
+      "effect": "Credit Assessment & Underwriting becomes faster and more data-driven, with AI-generated risk scores replacing many manual evaluations",
+      "reasoning": "Automated risk scoring directly feeds risk metrics used in underwriting, eliminating manual analysis steps and altering the workflow downstream",
+      "path_json": "[\"activity:Model execution\", \"process:Automated Risk Scoring\", \"stage:Credit Assessment & Underwriting\"]"
+    },
+    {
+      "id": 16,
+      "run_id": 4,
+      "affected_type": "skill",
+      "affected_id": 64,
+      "depth": 2,
+      "effect": "Financial Impact Analysis becomes more data-driven and faster, relying on AI-generated risk scores",
+      "reasoning": "AI-driven model execution automates risk assessment, providing real-time risk metrics that feed directly into financial impact calculations, altering the skill's methodology and speed",
+      "path_json": "[\"activity:Model execution\", \"role:Chief Technology Officer \\u2013 Retail Banking\", \"skill:Financial Impact Analysis\"]"
+    },
+    {
+      "id": 17,
+      "run_id": 4,
+      "affected_type": "skill",
+      "affected_id": 39,
+      "depth": 2,
+      "effect": "Data modeling shifts from manual schema design to AI\u2011generated model suggestions, reducing effort and accelerating iteration.",
+      "reasoning": "Full automation of model execution by AI changes how data structures are defined, making the data modeling skill less manual and more supervisory, thus constituting a meaningful downstream impact.",
+      "path_json": "[\"activity:Model execution\", \"role:Chief Technology Officer \\u2013 Retail Banking\", \"skill:Data Modeling\"]"
+    },
+    {
+      "id": 18,
+      "run_id": 4,
+      "affected_type": "skill",
+      "affected_id": 12,
+      "depth": 2,
+      "effect": "SQL Querying usage declines as the AI automates data extraction and model execution tasks",
+      "reasoning": "The CTO-driven automation of model execution removes the need for manual SQL data pulls, reducing reliance on the SQL Querying skill.",
+      "path_json": "[\"activity:Model execution\", \"role:Chief Technology Officer \\u2013 Retail Banking\", \"skill:SQL Querying\"]"
+    },
+    {
+      "id": 19,
+      "run_id": 4,
+      "affected_type": "skill",
+      "affected_id": 86,
+      "depth": 2,
+      "effect": "Data Integration (ETL/ELT) will shift from manual pipeline design to automated, AI\u2011driven data flow orchestration, reducing manual coding and oversight.",
+      "reasoning": "Full automation of model execution eliminates manual data preparation steps, requiring ETL processes to be re\u2011engineered as AI\u2011controlled, real\u2011time pipelines that feed models directly.",
+      "path_json": "[\"activity:Model execution\", \"role:Chief Technology Officer \\u2013 Retail Banking\", \"skill:Data Integration (ETL/ELT)\"]"
     }
   ]
 }

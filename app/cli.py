@@ -68,8 +68,8 @@ def cmd_export(path: str = "data/sample_graph.json") -> None:
     import json
 
     from app.models import (
-        Activity, AIOpportunity, ClaimEvidence, Edge, Industry, Process, Role,
-        Skill, SkillImpact, Source, Stage,
+        Activity, AIOpportunity, CascadeResult, CascadeRun, ClaimEvidence, Edge,
+        Industry, Process, Role, Skill, SkillImpact, Source, Stage,
     )
 
     def rows(model):
@@ -82,6 +82,7 @@ def cmd_export(path: str = "data/sample_graph.json") -> None:
         ("activities", Activity), ("roles", Role), ("skills", Skill),
         ("edges", Edge), ("ai_opportunities", AIOpportunity), ("skill_impacts", SkillImpact),
         ("sources", Source), ("claim_evidence", ClaimEvidence),
+        ("cascade_runs", CascadeRun), ("cascade_results", CascadeResult),
     ]}
     with open(path, "w") as f:
         json.dump(data, f, indent=2, default=str)
@@ -147,8 +148,8 @@ def cmd_load_sample(path: str = "data/sample_graph.json") -> None:
     from datetime import datetime
 
     from app.models import (
-        Activity, AIOpportunity, ClaimEvidence, Edge, Industry, Process, Role,
-        Skill, SkillImpact, Source, Stage,
+        Activity, AIOpportunity, CascadeResult, CascadeRun, ClaimEvidence, Edge,
+        Industry, Process, Role, Skill, SkillImpact, Source, Stage,
     )
 
     models = {
@@ -156,6 +157,7 @@ def cmd_load_sample(path: str = "data/sample_graph.json") -> None:
         "activities": Activity, "roles": Role, "skills": Skill, "edges": Edge,
         "ai_opportunities": AIOpportunity, "skill_impacts": SkillImpact,
         "sources": Source, "claim_evidence": ClaimEvidence,
+        "cascade_runs": CascadeRun, "cascade_results": CascadeResult,
     }
     with open(path) as f:
         data = json.load(f)

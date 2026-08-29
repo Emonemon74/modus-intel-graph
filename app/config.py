@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     llm_timeout: float = 45.0   # per-request; a queued free-tier call that exceeds this is retried
     # Client-side tokens-per-minute cap. Groq free tier for gpt-oss-120b is 8000.
     # Set to 0 to disable (local Ollama, or a paid tier).
-    llm_tokens_per_min: int = 6000
+    llm_tokens_per_min: int = 7500
 
     # Local, CPU-friendly embedding model (Apache-2.0). Downloaded once, then offline.
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
@@ -51,7 +51,7 @@ class Settings(BaseSettings):
     max_skills_per_activity: int = 4
     max_roles: int = 20
     max_research_skills: int = 25   # research only the most-connected skills (web search per skill doesn't scale)
-    cascade_max_depth: int = 2
+    cascade_max_depth: int = 1  # fast live default; UI can request 2-3
     cascade_max_branch: int = 5   # neighbours probed per node -- keeps a live cascade ~1 min
 
     # Tighter caps for the live "surprise record" path so it returns in ~30-60s.
